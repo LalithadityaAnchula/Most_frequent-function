@@ -1,0 +1,23 @@
+def Most_frequent(word,letters):
+    lals=dict()
+    for letter in letters:
+        count=0
+        for var in word:
+            if letter==var:
+                count+=1
+        lals[count,letter]=letter+" = "+str(count)
+    list1=sorted(list(lals.keys()),reverse=True)
+    for loop in list1:
+        print(lals[loop])
+variable=input("Please enter a string : ")
+Most_frequent(variable,set(variable))
+
+# output of the above code is :
+Please enter a string : kitkat
+t = 2
+k = 2
+i = 1
+a = 1
+
+Process returned 0 (0x0)        execution time : 3.625 s
+Press any key to continue . . .
